@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta CEP</title>
+</head>
+<body>
+  <h2>Endereço</h2>
+  <form id="cepForm">
+    <div>
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required>
+      <button type="button" onclick="buscarEndereco()">Enviar</button>
+    </div>
+  </form>
+    <div id="endereco">
+      <p>
+      <label for="rua">Rua:</label>
+      <input type="text" id="rua" name="rua" readonly>
+      </p>
+      <p>
+      <label for="numero">Número:</label>
+      <input type="text" id="numero" name="numero"> 
+      </p>
+      <p>
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" readonly>  
+      </p>
+      <p>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" readonly>
+      </p>
+      <p>
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" readonly>
+      </p>        
+    </div>
+  <script src="viacep.js"></script>
+</body>
+</html>
